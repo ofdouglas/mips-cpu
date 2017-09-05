@@ -1,0 +1,6 @@
+X"3c01bfc0",    -- 0xbfc00000:  lui	at,0xbfc0
+X"34210400",    -- 0xbfc00004:  ori	at,at,0x400
+X"3c02dead",    -- 0xbfc00008:  lui	v0,0xdead
+X"3442beef",    -- 0xbfc0000c:  ori	v0,v0,0xbeef
+X"ac220000",    -- 0xbfc00010:  sw	v0,0(at)
+X"8c230000",    -- 0xbfc00014:  lw	v1,0(at)

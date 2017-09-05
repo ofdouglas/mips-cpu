@@ -1,0 +1,17 @@
+X"3c01bfc0",    -- 0xbfc00000:  lui	at,0xbfc0
+X"34210400",    -- 0xbfc00004:  ori	at,at,0x400
+X"3c02dead",    -- 0xbfc00008:  lui	v0,0xdead
+X"3442beef",    -- 0xbfc0000c:  ori	v0,v0,0xbeef
+X"ac220000",    -- 0xbfc00010:  sw	v0,0(at)
+X"ac220004",    -- 0xbfc00014:  sw	v0,4(at)
+X"a4220008",    -- 0xbfc00018:  sh	v0,8(at)
+X"a422000a",    -- 0xbfc0001c:  sh	v0,10(at)
+X"a022000d",    -- 0xbfc00020:  sb	v0,13(at)
+X"a022000e",    -- 0xbfc00024:  sb	v0,14(at)
+X"8c230000",    -- 0xbfc00028:  lw	v1,0(at)
+X"8c240004",    -- 0xbfc0002c:  lw	a0,4(at)
+X"8c250008",    -- 0xbfc00030:  lw	a1,8(at)
+X"84260008",    -- 0xbfc00034:  lh	a2,8(at)
+X"94270008",    -- 0xbfc00038:  lhu	a3,8(at)
+X"8028000d",    -- 0xbfc0003c:  lb	t0,13(at)
+X"9029000d",    -- 0xbfc00040:  lbu	t1,13(at)

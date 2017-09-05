@@ -1,0 +1,20 @@
+X"00000000",    -- 0xbfc00000:  nop
+X"10000007",    -- 0xbfc00004:  b	0xbfc00024
+X"00000000",    -- 0xbfc00008:  nop
+X"00000000",    -- 0xbfc0000c:  nop
+X"1000fffb",    -- 0xbfc00010:  b	0xbfc00000
+X"00000000",    -- 0xbfc00014:  nop
+X"00000000",    -- 0xbfc00018:  nop
+X"1000fff8",    -- 0xbfc0001c:  b	0xbfc00000
+X"00000000",    -- 0xbfc00020:  nop
+X"342100ff",    -- 0xbfc00024:  ori	at,at,0xff
+X"3442ffff",    -- 0xbfc00028:  ori	v0,v0,0xffff
+X"3c03bfc1",    -- 0xbfc0002c:  lui	v1,0xbfc1
+X"34632000",    -- 0xbfc00030:  ori	v1,v1,0x2000
+X"ac610000",    -- 0xbfc00034:  sw	at,0(v1)
+X"00000000",    -- 0xbfc00038:  nop
+X"ac620000",    -- 0xbfc0003c:  sw	v0,0(v1)
+X"00000000",    -- 0xbfc00040:  nop
+X"0bf0000d",    -- 0xbfc00044:  j	0xbfc00034
+X"00000000",    -- 0xbfc00048:  nop
+X"00000000",    -- 0xbfc0004c:  nop

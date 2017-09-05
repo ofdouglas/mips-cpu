@@ -1,0 +1,36 @@
+X"2408001b",    -- 0xbfc00000:  li	t0,27
+X"24090004",    -- 0xbfc00004:  li	t1,4
+X"15200002",    -- 0xbfc00008:  bnez	t1,0xbfc00014
+X"0109001b",    -- 0xbfc0000c:  divu	zero,t0,t1
+X"0007000d",    -- 0xbfc00010:  break	0x7
+X"00004012",    -- 0xbfc00014:  mflo	t0
+X"00008012",    -- 0xbfc00018:  mflo	s0
+X"00008810",    -- 0xbfc0001c:  mfhi	s1
+X"2408ffe5",    -- 0xbfc00020:  li	t0,-27
+X"24090004",    -- 0xbfc00024:  li	t1,4
+X"15200002",    -- 0xbfc00028:  bnez	t1,0xbfc00034
+X"0109001a",    -- 0xbfc0002c:  div	zero,t0,t1
+X"0007000d",    -- 0xbfc00030:  break	0x7
+X"2401ffff",    -- 0xbfc00034:  li	at,-1
+X"15210004",    -- 0xbfc00038:  bne	t1,at,0xbfc0004c
+X"3c018000",    -- 0xbfc0003c:  lui	at,0x8000
+X"15010002",    -- 0xbfc00040:  bne	t0,at,0xbfc0004c
+X"00000000",    -- 0xbfc00044:  nop
+X"0006000d",    -- 0xbfc00048:  break	0x6
+X"00004012",    -- 0xbfc0004c:  mflo	t0
+X"00009012",    -- 0xbfc00050:  mflo	s2
+X"00009810",    -- 0xbfc00054:  mfhi	s3
+X"24080002",    -- 0xbfc00058:  li	t0,2
+X"24090003",    -- 0xbfc0005c:  li	t1,3
+X"01090019",    -- 0xbfc00060:  multu	t0,t1
+X"0000a012",    -- 0xbfc00064:  mflo	s4
+X"0000a810",    -- 0xbfc00068:  mfhi	s5
+X"2408fffe",    -- 0xbfc0006c:  li	t0,-2
+X"2409fffd",    -- 0xbfc00070:  li	t1,-3
+X"01090018",    -- 0xbfc00074:  mult	t0,t1
+X"0000b012",    -- 0xbfc00078:  mflo	s6
+X"0000b810",    -- 0xbfc0007c:  mfhi	s7
+X"0bf00022",    -- 0xbfc00080:  j	0xbfc00088
+X"00000000",    -- 0xbfc00084:  nop
+X"1000ffff",    -- 0xbfc00088:  b	0xbfc00088
+X"00000000",    -- 0xbfc0008c:  nop

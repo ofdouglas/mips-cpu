@@ -1,0 +1,26 @@
+X"10000007",    -- 0xbfc00000:  b	0xbfc00020
+X"00000000",    -- 0xbfc00004:  nop
+X"1000fffd",    -- 0xbfc00008:  b	0xbfc00000
+X"00000000",    -- 0xbfc0000c:  nop
+X"24630001",    -- 0xbfc00010:  addiu	v1,v1,1
+X"401a7000",    -- 0xbfc00014:  mfc0	k0,c0_epc
+X"03400008",    -- 0xbfc00018:  jr	k0
+X"42000010",    -- 0xbfc0001c:  c0	0x10
+X"3c010001",    -- 0xbfc00020:  lui	at,0x1
+X"342186a0",    -- 0xbfc00024:  ori	at,at,0x86a0
+X"40815800",    -- 0xbfc00028:  mtc0	at,$11
+X"40016000",    -- 0xbfc0002c:  mfc0	at,c0_sr
+X"34210410",    -- 0xbfc00030:  ori	at,at,0x410
+X"40816000",    -- 0xbfc00034:  mtc0	at,c0_sr
+X"24030000",    -- 0xbfc00038:  li	v1,0
+X"3c04bfc1",    -- 0xbfc0003c:  lui	a0,0xbfc1
+X"34842000",    -- 0xbfc00040:  ori	a0,a0,0x2000
+X"286501f4",    -- 0xbfc00044:  slti	a1,v1,500
+X"14a0fffe",    -- 0xbfc00048:  bnez	a1,0xbfc00044
+X"00000000",    -- 0xbfc0004c:  nop
+X"00001821",    -- 0xbfc00050:  move	v1,zero
+X"8c860000",    -- 0xbfc00054:  lw	a2,0(a0)
+X"38c60001",    -- 0xbfc00058:  xori	a2,a2,0x1
+X"ac860000",    -- 0xbfc0005c:  sw	a2,0(a0)
+X"0bf00011",    -- 0xbfc00060:  j	0xbfc00044
+X"00000000",    -- 0xbfc00064:  nop

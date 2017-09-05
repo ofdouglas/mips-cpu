@@ -1,0 +1,9 @@
+X"34020006",    -- 0xbfc00000:  li	v0,0x6
+X"3c01dead",    -- 0xbfc00004:  lui	at,0xdead
+X"3421beef",    -- 0xbfc00008:  ori	at,at,0xbeef
+X"000119c0",    -- 0xbfc0000c:  sll	v1,at,0x7
+X"000121c2",    -- 0xbfc00010:  srl	a0,at,0x7
+X"000129c3",    -- 0xbfc00014:  sra	a1,at,0x7
+X"00453004",    -- 0xbfc00018:  sllv	a2,a1,v0
+X"00453806",    -- 0xbfc0001c:  srlv	a3,a1,v0
+X"00454007",    -- 0xbfc00020:  srav	t0,a1,v0
